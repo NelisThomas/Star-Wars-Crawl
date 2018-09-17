@@ -1,0 +1,29 @@
+body {
+  background: #111;
+  perspective: 200px;
+  overflow: hidden;
+}
+
+p {
+    text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #fcd000;
+  font-weight: bold;
+  width: 600px;
+  margin: 0 auto;
+  transform: rotateX(45deg);
+  animation: animateCrawl 40s ease-in;
+}
+
+p span { 
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@keyframes animateCrawl {
+    0%   { transform: rotateX(30deg) translateY(480px); }
+    100% { transform: rotateX(30deg) translateY(-1500px); }
+}
