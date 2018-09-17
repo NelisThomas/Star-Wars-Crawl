@@ -7,12 +7,12 @@ body {
 p {
     text-align: center;
   font-family: sans-serif;
-  font-size: 30px;
+  font-size: 45px;
   color: #fcd000;
   font-weight: bold;
   width: 600px;
   margin: 0 auto;
-  transform: rotateX(45deg);
+  transform: rotateX(10deg);
   animation: animateCrawl 40s ease-in;
 }
 
@@ -26,4 +26,11 @@ p span {
 @keyframes animateCrawl {
     0%   { transform: rotateX(30deg) translateY(480px); }
     100% { transform: rotateX(30deg) translateY(-1500px); }
+}
+h1{
+    color: dodgerblue;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    animation:
 }
