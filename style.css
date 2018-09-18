@@ -13,9 +13,9 @@ p {
   width: 600px;
   margin: 0 auto;
   transform: rotateX(10deg);
-  animation: animateCrawl 40s ease-in;
-}
-
+    animation: animateCrawl 40s;
+    
+  }
 p span { 
   display: block;
   width: 100%;
@@ -24,13 +24,21 @@ p span {
 }
 
 @keyframes animateCrawl {
-    0%   { transform: rotateX(30deg) translateY(480px); }
-    100% { transform: rotateX(30deg) translateY(-1500px); }
+    0%   { transform: rotateX(45deg) translateY(285px); }
+    100% { transform: rotateX(45deg) translateY(-1500px); }
 }
 h1{
     color: dodgerblue;
-    font-family: sans-serif;
+    font-family: arial;
     text-align: center;
     margin-top: 200px;
-    animation:
+    animation: disapear;
+    animation-duration: 2.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes disapear{
+    0% {opacity:1;display: block;}
+    100% {opacity:0; display:none;}
 }
