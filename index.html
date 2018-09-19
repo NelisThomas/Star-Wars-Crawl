@@ -2,11 +2,31 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script>
+var music = document.getElementById("music.mp3");
+function enableAutoplay() { 
+    music.autoplay = true;
+    music.load();
+}
+
+function disableAutoplay() { 
+    music.autoplay = false;
+    music.load();
+} 
+
+function checkAutoplay() { 
+    alert(music.autoplay);
+} 
+</script> 
+    
 </head>
 
 <body>
 <div>
- 
+ <audio controls autoplay>
+     <source src="music.mp3" type="audio/mpeg">
+ </audio>
     
 <h1>A long time ago, in a galaxy far, far away...</h1>
     
@@ -36,6 +56,7 @@ stolen plans that can save<br>
 her people and restore<br>
     freedom to the galaxy.....</p>
     
+
 
 </div>
 </body>

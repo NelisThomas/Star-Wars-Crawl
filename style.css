@@ -26,9 +26,9 @@ p {
 
 
 @keyframes animateCrawl {
-    0%   { transform: rotateX(8deg) translateY(145px); opacity:0; }
+    0%   { transform: rotateX(5deg) translateY(145px); opacity:0; }
     1% {opacity:1;}
-    100% { transform: rotateX(8deg) translateY(-3000px); opacity:1;}
+    100% { transform: rotateX(5deg) translateY(-3000px); opacity:1;}
 }
 
 h1{
@@ -47,3 +47,6 @@ h1{
     100% {opacity:0; display:none;}
 }
 
+#theme{
+    
+}
